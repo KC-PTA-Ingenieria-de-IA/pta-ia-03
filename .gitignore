@@ -1,0 +1,16 @@
+# Whitelist: solo PDFs y notebooks se suben. Resto ignorado.
+# La estructura de carpetas (clase-1, clase-2, slides/, notebooks/, …) se preserva
+# implícitamente porque git incluye las carpetas que contengan algún archivo tracked.
+
+# Ignorar todo por defecto
+*
+
+# Permitir entrar a las subcarpetas para poder matchear archivos dentro
+!*/
+
+# Tipos permitidos en cualquier nivel
+!*.pdf
+!*.ipynb
+
+# El propio .gitignore
+!.gitignore
